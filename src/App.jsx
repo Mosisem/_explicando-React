@@ -35,34 +35,77 @@ function App() {
       </div>
       <section className='Como_usar'>
         <h2> COMO UTILIZAR ??</h2>
-        <div>
-          <p className='txt_expicacao'>
+        <div className='card_passos'>
+                  <p className='txt_explicacao'>
+                      <h3>
+                       <strong>
+                         <a href="">1.</a> Instale o Node.js
+                       </strong> 
+                      </h3>
+                        Antes de tudo, você precisa instalar o Node.js no seu computador. Ele é necessário para criar e rodar projetos em React.
+                        <div className='comando_cmd'>
 
-              1. Instale o Node.js
-                Antes de tudo, você precisa instalar o Node.js no seu computador. Ele é necessário para criar e rodar projetos em React.
-          </p>
-          <p className='txt_expicacao'>
-                2. Crie um novo projeto
-                Depois de instalar o Node, você pode criar um projeto usando um comando pronto (como o Vite ou Create React App). Esse comando já monta toda a estrutura básica para você começar.
-          </p>
+                        </div>
+                  </p>
+        </div>
 
-          <p className='txt_expicacao'>
-                3. Abra o projeto no editor
-                Com o projeto criado, abra a pasta no seu editor de código (como o VS Code). Lá você verá vários arquivos organizados.
-          </p>
+        <div className='card_passos'>
+                  <p className='txt_explicacao'>
+                       <h3>
+                         <strong>
+                           <a href="">2.</a> Crie um novo projeto
+                         </strong>
+                       </h3> 
+                        Depois de instalar o Node, você pode criar um projeto usando um comando pronto (como o Vite ou Create React App). Esse comando já monta toda a estrutura básica para você começar.
+                  </p>
+        </div>
 
-          <p className='txt_expicacao'>
-                4. Crie componentes
-                No React, você constrói a tela usando pequenas partes chamadas componentes. Pense neles como blocos da sua página (por exemplo: um botão, um cabeçalho ou um card).
-          </p>
-          <p className='txt_expicacao'>
-                5. Mostre informações na tela
-                Você pode colocar textos, imagens e botões dentro desses componentes. Também pode mudar o que aparece na tela quando o usuário clica em algo.
-          </p>
-          <p className='txt_expicacao'>
-                6. Rode o projeto
-                Por fim, use o comando para iniciar o projeto. Ele abrirá automaticamente no navegador, e tudo que você alterar no código será atualizado quase na hora.
-          </p>
+        <div className='card_passos'>
+
+                  <p className='txt_explicacao'>
+                        <h3>
+                          <strong>
+                             <a href="">3.</a> Abra o projeto no editor
+                          </strong>
+                        </h3>
+                        Com o projeto criado, abra a pasta no seu editor de código (como o VS Code). Lá você verá vários arquivos organizados.
+                  </p>
+        
+        </div>
+
+        <div className='card_passos'>
+                  <p className='txt_explicacao'>
+                        <h3>
+                          <strong>
+                             <a href="">4.</a> Crie componentes
+                          </strong>
+                        </h3>
+                        No React, você constrói a tela usando pequenas partes chamadas componentes. Pense neles como blocos da sua página (por exemplo: um botão, um cabeçalho ou um card).
+                  </p>
+
+        </div>
+
+        <div className='card_passos'>
+                  <p className='txt_explicacao'>
+                        <h3>
+                          <strong>
+                             <a href="">5.</a> Mostre informações na tela
+                          </strong>
+                        </h3> 
+                        Você pode colocar textos, imagens e botões dentro desses componentes. Também pode mudar o que aparece na tela quando o usuário clica em algo.
+                  </p>
+
+        </div>
+
+        <div className='card_passos'>
+                  <p className='txt_explicacao'>
+                       <h3>
+                         <strong>
+                            <a href="">6.</a> Rode o projeto
+                         </strong>
+                       </h3> 
+                        Por fim, use o comando para iniciar o projeto. Ele abrirá automaticamente no navegador, e tudo que você alterar no código será atualizado quase na hora.
+                  </p>
         </div>
 
       </section>
