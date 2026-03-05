@@ -9,30 +9,33 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1> React</h1>
-      <div className="card">
-        <img src={reactPrompt} className='terminal_img'></img>
-        <div className='txt_apresentando'>
-          <h2>O QUE É?</h2>
-          <div>
-             <p>
-                 O React é uma biblioteca JavaScript criada pela Meta (empresa responsável pelo Facebook) que facilita a criação de interfaces modernas para sites e aplicações web. Ele surgiu da necessidade de tornar as páginas mais rápidas, organizadas e fáceis de atualizar conforme o usuário interage.
-             </p>
-             <p>
-                Uma das ideias mais interessantes do React é dividir a interface em pequenas partes chamadas componentes. Pense como se fosse montar algo com peças de LEGO: cada peça tem sua função e pode ser reutilizada em diferentes partes do projeto. Isso deixa o código mais organizado e simples de manter.
+      <section className='logo_contente_txt'>
+              <div>
+                <a href="https://react.dev" target="_blank">
+                  <img src={reactLogo} className="logo react" alt="React logo" />
+                </a>
+                <h1> React</h1>
+              </div>
+              <div className="card">
+                <img src={reactPrompt} className='terminal_img'></img>
+                <div className='txt_apresentando'>
+                  <h2>O QUE É?</h2>
+                  <div>
+                    <p>
+                        O React é uma biblioteca JavaScript criada pela Meta (empresa responsável pelo Facebook) que facilita a criação de interfaces modernas para sites e aplicações web. Ele surgiu da necessidade de tornar as páginas mais rápidas, organizadas e fáceis de atualizar conforme o usuário interage.
+                    </p>
+                    <p>
+                        Uma das ideias mais interessantes do React é dividir a interface em pequenas partes chamadas componentes. Pense como se fosse montar algo com peças de LEGO: cada peça tem sua função e pode ser reutilizada em diferentes partes do projeto. Isso deixa o código mais organizado e simples de manter.
 
-                Outro ponto forte do React é o desempenho. Ele utiliza algo chamado Virtual DOM, que basicamente ajuda a atualizar somente o que realmente mudou na tela, em vez de recarregar tudo. Isso torna a experiência mais fluida e agradável para quem está usando a aplicação.
-             </p>
+                        Outro ponto forte do React é o desempenho. Ele utiliza algo chamado Virtual DOM, que basicamente ajuda a atualizar somente o que realmente mudou na tela, em vez de recarregar tudo. Isso torna a experiência mais fluida e agradável para quem está usando a aplicação.
+                    </p>
 
-          </div>
-         
-        </div>
-      </div>
+                  </div>
+                
+                </div>
+              </div>
+      </section>
+
       <section className='Como_usar'>
         <h2> COMO UTILIZAR ??</h2>
         <div className='card_passos'>

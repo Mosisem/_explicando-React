@@ -1,16 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-  align-items: center;
-}
-
 :root{
   --fundo:#000 ;
   --borda_e_detalhes:#223445;
   --titulo:#fff;
   --especial:#23d8fc;
 }
+
+.logo_contente_txt{
+  margin: 0 auto;
+  max-width: 1280px;
+  align-items: center;
+  text-align: center;
+}
+
 
 .logo {
   height: 6em;
@@ -55,6 +56,7 @@ h1{
   justify-content: center;
   padding: 4%;
   align-items: center;
+  text-align: center;
 }
 
 .read-the-docs {
@@ -91,8 +93,10 @@ h1{
   background-color: var(--borda_e_detalhes);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content: left;
+  margin-top: 15%;
+  width: 138%;
 }
 
 .Como_usar div{
@@ -104,15 +108,14 @@ h1{
   padding: 10px;
   width: 60%;
   background-color: red;
-
 }
 
 .Como_usar p{
   color: var(--titulo);
-  
 }
 .card_passos{
   display: flex;
+  justify-content: left;
 }
 
 .card_passos h3{
