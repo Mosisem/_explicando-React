@@ -1,8 +1,17 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import Aos, {AOS} from 'aos'
+import 'aos/dist/aos.css'
 import reactPrompt from './assets/React_cmd.png'
 import viteLogo from '/vite.svg'
 import './App.css'
+function Anima_pg(){
+    Aos.init({
+      duration: 1800,
+      once: true,
+      offset: 100
+    })
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,13 +19,14 @@ function App() {
   return (
     <>
       <section className='logo_contente_txt'>
-              <div>
+        <Anima_pg/>
+              <div className='react_sectiom' data-aos="fade-up">
                 <a href="https://react.dev" target="_blank">
                   <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
                 <h1> React</h1>
               </div>
-              <div className="card">
+              <div className="card" data-aos="fade-right">
                 <img src={reactPrompt} className='terminal_img'></img>
                 <div className='txt_apresentando'>
                   <h2>O QUE É?</h2>
@@ -47,12 +57,12 @@ function App() {
                       </h3>
                         Antes de tudo, você precisa instalar o Node.js no seu computador. Ele é necessário para criar e rodar projetos em React.
                         <div className='comando_cmd'>
-
+                           <p> npm create vite@latest nome-do-projeto -- --template react </p>
                         </div>
                   </p>
         </div>
 
-        <div className='card_passos'>
+        <div className='card_passos_1'>
                   <p className='txt_explicacao'>
                        <h3>
                          <strong>
