@@ -17,6 +17,7 @@
   --borda_e_detalhes:#223445;
   --titulo:#fff;
   --especial:#23d8fc;
+  --cards:#a7c7fa;
 }
 
 .logo_contente_txt{
@@ -69,6 +70,46 @@ h1{
   margin-top: 20%;
 }
 
+.logo_html img{
+  margin: 2%;
+  width: 2.5%;
+  transition: filter 900ms;
+  animation: flutua 3s ease-in-out infinite;
+}
+
+@keyframes flutua {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateX(-35px);
+  }
+}
+
+.logo_js{
+  padding-left: 40%;
+  display: flex;
+  justify-content:left;
+}
+
+.logo_js img{
+  margin: 2%;
+  width: 3%;
+  transition: filter 900ms;
+  animation: flutua_js 3s ease-in-out infinite;
+}
+
+@keyframes flutua_js {
+  0%, 100% {
+    transform: translateY(-20px);
+    
+  }
+  50% {
+    transform: translateX(35px); 
+  }
+   
+}
+
 .card {
   display:flex;
   flex-direction: row;
@@ -109,8 +150,18 @@ h1{
   padding: 20px;
 }
 
+.txt_explicacao a{
+ align-items: center;
+  color: var(--titulo);
+  text-decoration: none;
+  background-color:black;
+  border: 2px solid var(--especial);
+  border-radius: 140%;
+  padding: 10px;
+}
+
 .Como_usar{
-  background-color: var(--borda_e_detalhes);
+  background-color: var(--fundo);
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -135,12 +186,15 @@ h1{
 .card_passos{
   display: flex;
   justify-content: left;
+  border:  2px solid var(--especial);
+  background-color: var(--borda_e_detalhes);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .card_passos_1{
   display: flex;
   justify-content: left; 
-  background-color: #c8d8db;
 }
 
 .card_passos h3{

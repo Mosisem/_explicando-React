@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import htmlLogo from './assets/HTML5.png'
+import jsLogo from './assets/JavaScript.png'
 import Aos, {AOS} from 'aos'
 import 'aos/dist/aos.css'
 import reactPrompt from './assets/React_cmd.png'
@@ -21,12 +23,22 @@ function App() {
       <section className='logo_contente_txt'>
         <Anima_pg/>
               <div className='react_sectiom' data-aos="fade-up">
+                <div className='logo_html'>
+                    <img src={htmlLogo} alt=" logo html5" />
+                </div>
+
                 <a href="https://react.dev" target="_blank">
                   <img src={reactLogo} className="logo react" alt="React logo" />
                 </a>
+
+                <div className='logo_js' data-aos="fade-up">
+                   <img src={jsLogo} alt=" logo javascript" />
+                </div>
+
                 <h1> React</h1>
+
               </div>
-              <div className="card" data-aos="fade-right">
+              <div className="card" data-aos="fade-up">
                 <img src={reactPrompt} className='terminal_img'></img>
                 <div className='txt_apresentando'>
                   <h2>O QUE É?</h2>
@@ -47,38 +59,41 @@ function App() {
       </section>
 
       <section className='Como_usar'>
-        <h2> COMO UTILIZAR ??</h2>
-        <div className='card_passos'>
+        <h2 data-aos="fade-up"> COMO UTILIZAR ??</h2>
+        <div className='card_passos' data-aos="fade-right">
                   <p className='txt_explicacao'>
                       <h3>
                        <strong>
-                         <a href="">1.</a> Instale o Node.js
+                         <a href="https://nodejs.org/pt-br/download">1</a> Instale o Node.js
                        </strong> 
                       </h3>
                         Antes de tudo, você precisa instalar o Node.js no seu computador. Ele é necessário para criar e rodar projetos em React.
                         <div className='comando_cmd'>
-                           <p> npm create vite@latest nome-do-projeto -- --template react </p>
+                          
                         </div>
                   </p>
         </div>
 
-        <div className='card_passos_1'>
+        <div className='card_passos' data-aos="fade-left">
                   <p className='txt_explicacao'>
                        <h3>
                          <strong>
-                           <a href="">2.</a> Crie um novo projeto
+                           <a href="">2</a> Crie um novo projeto
                          </strong>
                        </h3> 
                         Depois de instalar o Node, você pode criar um projeto usando um comando pronto (como o Vite ou Create React App). Esse comando já monta toda a estrutura básica para você começar.
+                       <div>
+                            <p> npm create vite@latest nome-do-projeto -- --template react </p>
+                       </div>
                   </p>
         </div>
 
-        <div className='card_passos'>
+        <div className='card_passos' data-aos="fade-right">
 
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">3.</a> Abra o projeto no editor
+                             <a href="">3</a> Abra o projeto no editor
                           </strong>
                         </h3>
                         Com o projeto criado, abra a pasta no seu editor de código (como o VS Code). Lá você verá vários arquivos organizados.
@@ -86,11 +101,11 @@ function App() {
         
         </div>
 
-        <div className='card_passos'>
+        <div className='card_passos' data-aos="fade-left">
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">4.</a> Crie componentes
+                             <a href="">4</a> Crie componentes
                           </strong>
                         </h3>
                         No React, você constrói a tela usando pequenas partes chamadas componentes. Pense neles como blocos da sua página (por exemplo: um botão, um cabeçalho ou um card).
@@ -98,11 +113,11 @@ function App() {
 
         </div>
 
-        <div className='card_passos'>
+        <div className='card_passos' data-aos="fade-right">
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">5.</a> Mostre informações na tela
+                             <a href="">5</a> Mostre informações na tela
                           </strong>
                         </h3> 
                         Você pode colocar textos, imagens e botões dentro desses componentes. Também pode mudar o que aparece na tela quando o usuário clica em algo.
@@ -110,11 +125,11 @@ function App() {
 
         </div>
 
-        <div className='card_passos'>
+        <div className='card_passos'data-aos="fade-left">
                   <p className='txt_explicacao'>
                        <h3>
                          <strong>
-                            <a href="">6.</a> Rode o projeto
+                            <a href="">6</a> Rode o projeto
                          </strong>
                        </h3> 
                         Por fim, use o comando para iniciar o projeto. Ele abrirá automaticamente no navegador, e tudo que você alterar no código será atualizado quase na hora.
