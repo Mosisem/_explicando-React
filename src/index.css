@@ -20,6 +20,10 @@
   --cards:#a7c7fa;
 }
 
+body{
+  background-color: #000;
+}
+
 .logo_contente_txt{
   margin: 0 auto;
   max-width: 1280px;
@@ -72,6 +76,7 @@ h1{
 
 .logo_html img{
   margin: 2%;
+  margin-right: 7%;
   width: 2.5%;
   transition: filter 900ms;
   animation: flutua 3s ease-in-out infinite;
@@ -79,10 +84,10 @@ h1{
 
 @keyframes flutua {
   0%, 100% {
-    transform: translateY(-20px);
+    transform: translateY(-25px);
   }
   50% {
-    transform: translateX(-35px);
+    transform: translateX(-65px);
   }
 }
 
@@ -110,6 +115,50 @@ h1{
    
 }
 
+.logo_css img{
+  margin: 2%;
+  margin-top: -60%;
+  width: 2.5%;
+  transition: filter 945ms;
+  animation: flutua_css 3s ease-in-out infinite;
+}
+
+@keyframes flutua_css {
+  0%, 100% {
+    transform: translateY(16px);
+    
+  }
+  50% {
+    transform: translateX(48px); 
+  }
+   
+}
+
+.logo_git{
+  justify-content: right;
+  align-items:left;
+  margin-left: 5%;
+}
+.logo_git img{
+  margin: 2%;
+  margin-bottom: -8%;
+
+  width: 2.5%;
+  transition: filter 945ms;
+  animation: flutua_git 3s ease-in-out infinite;
+}
+
+@keyframes flutua_git {
+  0%, 100% {
+    transform: translateY(-41px);
+    
+  }
+  50% {
+    transform: translateX(68px); 
+  }
+   
+}
+
 .card {
   display:flex;
   flex-direction: row;
@@ -125,7 +174,7 @@ h1{
 }
 
 .terminal_img{
-  width: 35%;
+  width: 32%;
   border-radius: 5px;
 }
 .txt_apresentando{
@@ -151,13 +200,16 @@ h1{
 }
 
 .txt_explicacao a{
- align-items: center;
+  align-items: center;
   color: var(--titulo);
   text-decoration: none;
   background-color:black;
   border: 2px solid var(--especial);
   border-radius: 140%;
   padding: 10px;
+}
+.txt_explicacao p{
+  text-align: left;
 }
 
 .Como_usar{
@@ -200,4 +252,15 @@ h1{
 .card_passos h3{
   display: flex;
   justify-content: left;
+}
+
+
+.comando_cmd img{
+   width: 25%;
+}
+
+.cmd_prompt{
+  background-color: var(--fundo);
+  color:#16f4d0;
+  border-radius: 5px;
 }

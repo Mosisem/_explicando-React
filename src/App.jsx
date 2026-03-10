@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import htmlLogo from './assets/HTML5.png'
 import jsLogo from './assets/JavaScript.png'
+import nodelogo from './assets/Node.js.png'
+import csslogo from './assets/CSS3.png'
+import gitlogo from './assets/git.png'
 import Aos, {AOS} from 'aos'
 import 'aos/dist/aos.css'
 import reactPrompt from './assets/React_cmd.png'
@@ -23,6 +26,9 @@ function App() {
       <section className='logo_contente_txt'>
         <Anima_pg/>
               <div className='react_sectiom' data-aos="fade-up">
+                <div className='logo_git'>
+                    <img src={gitlogo} alt=" logo git" />
+                </div>
                 <div className='logo_html'>
                     <img src={htmlLogo} alt=" logo html5" />
                 </div>
@@ -33,6 +39,10 @@ function App() {
 
                 <div className='logo_js' data-aos="fade-up">
                    <img src={jsLogo} alt=" logo javascript" />
+                </div>
+
+                 <div className='logo_css' data-aos="fade-up">
+                   <img src={csslogo} alt=" logo CSS#" />
                 </div>
 
                 <h1> React</h1>
@@ -64,12 +74,28 @@ function App() {
                   <p className='txt_explicacao'>
                       <h3>
                        <strong>
-                         <a href="https://nodejs.org/pt-br/download">1</a> Instale o Node.js
+                         <a href="https://nodejs.org/pt-br/download">1</a> Instalar o Node.js
                        </strong> 
                       </h3>
-                        Antes de tudo, você precisa instalar o Node.js no seu computador. Ele é necessário para criar e rodar projetos em React.
+                        <p>
+                           O primeiro passo para criar um projeto React é instalar o Node.js, que é um ambiente que permite executar JavaScript fora do navegador. Ele também instala automaticamente o npm (Node Package Manager), que é usado para baixar bibliotecas e ferramentas necessárias para o projeto.
+
+                            Passos:
+                        </p>
+                            Acesse o site oficial do Node.js.
+
+                            Baixe a versão LTS (Long Term Support), que é a mais estável.
+
+                            Execute o instalador e finalize a instalação.
+
+                            Depois de instalar, abra o terminal ou prompt de comando e digite
+
                         <div className='comando_cmd'>
-                          
+                               <img src={nodelogo} alt="logo do Node.js" />
+                               <div className='cmd_prompt' >
+                                    <p> anode -v</p>
+                                    <p>npm -v</p>
+                               </div>
                         </div>
                   </p>
         </div>
@@ -78,11 +104,12 @@ function App() {
                   <p className='txt_explicacao'>
                        <h3>
                          <strong>
-                           <a href="">2</a> Crie um novo projeto
+                           <a href="">2</a> Criar o projeto React
                          </strong>
                        </h3> 
-                        Depois de instalar o Node, você pode criar um projeto usando um comando pronto (como o Vite ou Create React App). Esse comando já monta toda a estrutura básica para você começar.
-                       <div>
+                       Depois de instalar o Node.js, você pode criar um novo projeto React utilizando o Vite, que é uma ferramenta moderna para criar projetos front-end rapidamente.
+                            No terminal, digite:
+                       <div className='cmd_prompt' >
                             <p> npm create vite@latest nome-do-projeto -- --template react </p>
                        </div>
                   </p>
@@ -93,10 +120,14 @@ function App() {
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">3</a> Abra o projeto no editor
+                             <a href="">3</a> Acessar a pasta do projeto
                           </strong>
                         </h3>
-                        Com o projeto criado, abra a pasta no seu editor de código (como o VS Code). Lá você verá vários arquivos organizados.
+                          Depois que o projeto for criado, você precisa entrar na pasta dele através do terminal.
+                          Use o comando:
+                           <div className='cmd_prompt' >
+                                 <p>cd nome-do-projeto</p>
+                           </div>
                   </p>
         
         </div>
@@ -105,10 +136,14 @@ function App() {
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">4</a> Crie componentes
+                             <a href="">4</a> Instalar as dependências do projeto
                           </strong>
                         </h3>
-                        No React, você constrói a tela usando pequenas partes chamadas componentes. Pense neles como blocos da sua página (por exemplo: um botão, um cabeçalho ou um card).
+                          Agora é necessário instalar todas as bibliotecas que o projeto precisa para funcionar.
+                          Execute o comando:
+                          <div className='cmd_prompt' >
+                                 <p>npm install</p>
+                           </div>
                   </p>
 
         </div>
@@ -117,10 +152,14 @@ function App() {
                   <p className='txt_explicacao'>
                         <h3>
                           <strong>
-                             <a href="">5</a> Mostre informações na tela
+                             <a href="">5</a> Executar o projeto
                           </strong>
                         </h3> 
-                        Você pode colocar textos, imagens e botões dentro desses componentes. Também pode mudar o que aparece na tela quando o usuário clica em algo.
+                         Depois de instalar as dependências, você pode iniciar o servidor de desenvolvimento para visualizar o projeto no navegador.
+                         Digite no terminal:
+                         <div className='cmd_prompt' >
+                                 <p>npm run dev</p>
+                           </div>
                   </p>
 
         </div>
@@ -129,11 +168,23 @@ function App() {
                   <p className='txt_explicacao'>
                        <h3>
                          <strong>
-                            <a href="">6</a> Rode o projeto
+                            <a href="">6</a> Começar a desenvolver o projeto
                          </strong>
                        </h3> 
-                        Por fim, use o comando para iniciar o projeto. Ele abrirá automaticamente no navegador, e tudo que você alterar no código será atualizado quase na hora.
-                  </p>
+                        <p>
+                          A maior parte do desenvolvimento acontece dentro da pasta src.
+                          Arquivos importantes:
+                        </p>
+                        <div className='cmd_prompt' >
+                                 <p>main.jsx → ponto de entrada da aplicação</p>
+
+                                 <p>App.jsx → componente principal da aplicação</p>
+
+                                 <p>assets/ → imagens e arquivos estáticos</p>
+
+                                 <p>index.html → arquivo base da página</p>
+                           </div>          
+                   </p>
         </div>
 
       </section>
